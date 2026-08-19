@@ -1,0 +1,44 @@
+h1{
+    text-align: center;
+    background-color:aliceblue;
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    margin: 20px;
+}
+.image-container{
+    text-align: center;
+    display:flex ;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+}
+img{
+    height:300px;
+    width: 300px;
+    border-radius: 10%;
+    border-color: bisque;
+    border-width: 2px;
+    
+
+}
+button{
+    height: 300px;
+    width: 100px;
+    align-items: center;
+    background-color: aliceblue;
+}
+.dark-mode{
+    background-color: black;
+    color: aliceblue;
+
+}
+body{
+    background-color: red;
+
+}
+h1:hover{
+    
+}

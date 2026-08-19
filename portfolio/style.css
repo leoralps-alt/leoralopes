@@ -1,0 +1,530 @@
+```css
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f7fc;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* Navigation */
+
+header {
+    background-color: #392f5a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 16px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #f7c8e0;
+}
+
+
+/* Home */
+
+.hero {
+    min-height: 90vh;
+    padding: 70px 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    background: linear-gradient(
+        135deg,
+        #fce4ec,
+        #eee5ff
+    );
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.welcome {
+    color: #7b2cbf;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #7b2cbf;
+}
+
+.hero h2 {
+    color: #392f5a;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 18px;
+}
+
+
+/* Profile */
+
+.profile-circle {
+    width: 270px;
+    height: 270px;
+
+    background-color: #392f5a;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 70px;
+    font-weight: bold;
+
+    border: 10px solid white;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Buttons */
+
+.btn,
+.github-btn,
+.contact-form button {
+    display: inline-block;
+
+    margin-top: 20px;
+    padding: 12px 22px;
+
+    background-color: #7b2cbf;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.btn:hover,
+.github-btn:hover,
+.contact-form button:hover {
+    background-color: #5a189a;
+}
+
+
+/* Common Sections */
+
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 25px;
+}
+
+.section-title {
+    text-align: center;
+
+    font-size: 35px;
+
+    color: #392f5a;
+
+    margin-bottom: 40px;
+}
+
+
+/* About */
+
+.about-box {
+    background-color: white;
+
+    padding: 35px;
+
+    border-left: 6px solid #7b2cbf;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.about-box p {
+    margin-bottom: 15px;
+}
+
+
+/* Education */
+
+.education-container {
+    display: flex;
+    justify-content: center;
+}
+
+.education-card {
+    width: 450px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 45px;
+}
+
+.education-card h3 {
+    color: #7b2cbf;
+    margin: 10px 0;
+}
+
+
+/* Skills */
+
+.skills-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    width: 220px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-icon {
+    font-size: 35px;
+}
+
+.skill-card h3 {
+    color: #7b2cbf;
+    margin: 10px 0;
+}
+
+
+/* Hobbies */
+
+.hobbies {
+    padding: 70px 25px;
+
+    background-color: #eee5ff;
+}
+
+.hobbies-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.hobby-card {
+    width: 300px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.hobby-icon {
+    font-size: 50px;
+}
+
+.hobby-card h3 {
+    color: #7b2cbf;
+    margin: 10px;
+}
+
+
+/* Projects */
+
+.projects-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 330px;
+
+    padding: 28px;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+}
+
+.project-icon {
+    font-size: 40px;
+}
+
+.project-card h3 {
+    color: #7b2cbf;
+
+    margin: 12px 0;
+}
+
+.project-card span {
+    display: block;
+
+    margin-top: 15px;
+
+    font-weight: bold;
+
+    color: #555;
+}
+
+
+/* GitHub */
+
+.github {
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background-color: #392f5a;
+
+    color: white;
+}
+
+.github h2 {
+    font-size: 32px;
+}
+
+.github-btn {
+    background-color: white;
+
+    color: #392f5a;
+}
+
+.github-btn:hover {
+    background-color: #eee;
+}
+
+
+/* Contact */
+
+.contact-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 40px;
+
+    flex-wrap: wrap;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+
+    min-width: 280px;
+
+    max-width: 500px;
+}
+
+.contact-info {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    border: 1px solid #ddd;
+}
+
+.contact-info h3 {
+    color: #7b2cbf;
+
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+
+/* Contact Form */
+
+.contact-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-family: Arial, sans-serif;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    background-color: #211a35;
+
+    color: white;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .nav-links {
+        gap: 10px;
+
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .profile-circle {
+        width: 210px;
+        height: 210px;
+
+        font-size: 55px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+}
+```
